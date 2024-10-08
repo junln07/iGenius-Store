@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes do Produto</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Detalhes do Produto - iGenius Store</title>
+    <link rel="stylesheet" href="product.css">
 </head>
 <body>
 
@@ -16,12 +17,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#products">Produtos</a>
-                        <ul class="dropdown">
-                            <li><a href="#iphones">iPhones</a></li>
-                            <li><a href="#airpods">AirPods</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#about">Sobre Nós</a></li>
                     <li><a href="#contact">Contato</a></li>
                     <li><a href="carrinho.html" class="cart-button">Carrinho</a></li>
@@ -30,14 +26,25 @@
         </div>
     </header>
 
-    <section class="container">
+    <!-- Detalhes do Produto -->
+    <section class="product-details container">
         <h2>Detalhes do Produto</h2>
-        <div id="product-details"></div>
-        <button onclick="location.href='index.html'">Voltar aos Produtos</button>
+        <div class="product-info">
+            <img id="product-image" src="" alt="Produto">
+            <div class="product-description">
+                <h3 id="product-name"></h3>
+                <p id="product-price"></p>
+                <p id="product-details"></p>
+                <button id="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+        </div>
     </section>
 
+    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2024 iGenius Store. Todos os direitos reservados.</p>
+        <div class="container">
+            <p>&copy; 2024 iGenius Store. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <script>
@@ -47,19 +54,58 @@
             return urlParams.get(name);
         }
 
-        // Preencher detalhes do produto na página
-        document.addEventListener('DOMContentLoaded', () => {
-            const product = getQueryParameter('product');
-            const price = getQueryParameter('price');
-            const details = getQueryParameter('details');
+        // Atualiza as informações do produto
+        function updateProductDetails(product) {
+            const productData = {
+                iphone13: {
+                    name: "iPhone 13",
+                    price: "R$ 6.999,00",
+                    details: "iPhone 13 com tela Super Retina XDR de 6,1 polegadas e A15 Bionic.",
+                    image: "img/iphone13.png"
+                },
+                iphone12: {
+                    name: "iPhone 12",
+                    price: "R$ 5.499,00",
+                    details: "iPhone 12 com 5G e tela Super Retina XDR de 6,1 polegadas.",
+                    image: "img/iphone12.png"
+                },
+                iphone11: {
+                    name: "iPhone 11",
+                    price: "R$ 4.299,00",
+                    details: "iPhone 11 com câmera dupla e A13 Bionic.",
+                    image: "img/iphone11.png"
+                },
+                iphonese: {
+                    name: "iPhone SE",
+                    price: "R$ 3.799,00",
+                    details: "iPhone SE com a performance do A13 Bionic.",
+                    image: "img/iphonese.png"
+                },
+                iphone14: {
+                    name: "iPhone 14",
+                    price: "R$ 7.999,00",
+                    details: "iPhone 14 com melhorias na câmera e duração da bateria.",
+                    image: "img/iphone14.png"
+                },
+                // Adicione mais produtos aqui...
+            };
 
-            const productDetailsContainer = document.getElementById('product-details');
-            productDetailsContainer.innerHTML = `
-                <h3>${product}</h3>
-                <p>Preço: R$ ${parseFloat(price).toFixed(2)}</p>
-                <p>Detalhes: ${details}</p>
-            `;
-        });
+            const productInfo = productData[product];
+            if (productInfo) {
+                document.getElementById("product-name").textContent = productInfo.name;
+                document.getElementById("product-price").textContent = productInfo.price;
+                document.getElementById("product-details").textContent = productInfo.details;
+                document.getElementById("product-image").src = productInfo.image;
+            } else {
+                document.querySelector(".product-details").innerHTML = "<p>Produto não encontrado.</p>";
+            }
+        }
+
+        // Executa ao carregar a página
+        window.onload = function() {
+            const product = getQueryParameter('product');
+            updateProductDetails(product);
+        };
     </script>
 
 </body>
