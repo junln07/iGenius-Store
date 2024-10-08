@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                iGenius Store
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#products">Produtos</a>
+                        <ul class="dropdown">
+                            <li><a href="#iphones">iPhones</a></li>
+                            <li><a href="#airpods">AirPods</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="carrinho.html" class="cart-button">Carrinho</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2>Detalhes do Produto</h2>
+        <div id="product-details"></div>
+        <button onclick="location.href='index.html'">Voltar aos Produtos</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 iGenius Store. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para obter os parâmetros da URL
+        function getQueryParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Preencher detalhes do produto na página
+        document.addEventListener('DOMContentLoaded', () => {
+            const product = getQueryParameter('product');
+            const price = getQueryParameter('price');
+            const details = getQueryParameter('details');
+
+            const productDetailsContainer = document.getElementById('product-details');
+            productDetailsContainer.innerHTML = `
+                <h3>${product}</h3>
+                <p>Preço: R$ ${parseFloat(price).toFixed(2)}</p>
+                <p>Detalhes: ${details}</p>
+            `;
+        });
+    </script>
+
+</body>
+</html>

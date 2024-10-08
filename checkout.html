@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Finalizar Compra</h1>
+            <a href="index.html" class="btn">Voltar à Loja</a>
+        </div>
+    </header>
+
+    <section id="checkout" class="container">
+        <h2>Revise seus Itens</h2>
+        <div id="checkout-items"></div>
+        <div id="total-price"></div>
+        
+        <h3>Informações de Pagamento</h3>
+        <form id="payment-form">
+            <input type="text" id="name" placeholder="Nome Completo" required>
+            <input type="email" id="email" placeholder="Seu Email" required>
+            <input type="text" id="address" placeholder="Endereço" required>
+            <h4>Forma de Pagamento</h4>
+            <input type="radio" id="boleto" name="payment" value="boleto" required>
+            <label for="boleto">Boleto</label>
+            <input type="radio" id="cartao" name="payment" value="cartao" required>
+            <label for="cartao">Cartão de Crédito</label>
+            <input type="radio" id="pix" name="payment" value="pix" required>
+            <label for="pix">Pix</label>
+            <button type="submit">Finalizar Pagamento</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Loja iPhone. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

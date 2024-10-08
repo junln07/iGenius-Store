@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>iGenius Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                iGenius Store
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#products">Produtos</a>
+                        <ul class="dropdown">
+                            <li><a href="product.html?category=iphones">iPhones</a></li>
+                            <li><a href="product.html?category=airpods">AirPods</a></li>
+                            <li><a href="product.html?category=accessories">Acessórios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="carrinho.html" class="cart-button">Carrinho</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <div class="hero">
+        <div class="overlay">
+            <h2>Loja de iPhones</h2>
+            <p>Conheça os melhores iPhones com ofertas exclusivas</p>
+        </div>
+    </div>
+
+    <!-- Produtos -->
+    <section id="products" class="container">
+        <h2>Nossos Produtos</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="img/ipjone13.png" alt="iPhone 13">
+                <h3>iPhone 13</h3>
+                <p data-price="6999.00">R$ 6.999,00</p>
+                <button class="view-product" data-product="iPhone 13" data-price="6999.00" data-details="Cor: Vermelho, Memória: 128GB" onclick="location.href='product.html?product=iPhone+13'">Ver Produto</button>
+            </div>
+            <div class="product-card">
+                <img src="img/iphone12.png" alt="iPhone 12">
+                <h3>iPhone 12</h3>
+                <p data-price="5499.00">R$ 5.499,00</p>
+                <button class="view-product" data-product="iPhone 12" data-price="5499.00" data-details="Cor: Azul, Memória: 64GB" onclick="location.href='product.html?product=iPhone+12'">Ver Produto</button>
+            </div>
+            <div class="product-card">
+                <img src="img/iphone11.png" alt="iPhone 11">
+                <h3>iPhone 11</h3>
+                <p data-price="4299.00">R$ 4.299,00</p>
+                <button class="view-product" data-product="iPhone 11" data-price="4299.00" data-details="Cor: Verde, Memória: 128GB" onclick="location.href='product.html?product=iPhone+11'">Ver Produto</button>
+            </div>
+            <div class="product-card">
+                <img src="img/iphonese.png" alt="iPhone SE">
+                <h3>iPhone SE</h3>
+                <p data-price="3799.00">R$ 3.799,00</p>
+                <button class="view-product" data-product="iPhone SE" data-price="3799.00" data-details="Cor: Preto, Memória: 64GB" onclick="location.href='product.html?product=iPhone+SE'">Ver Produto</button>
+            </div>
+            <div class="product-card">
+                <img src="img/iphone14.png" alt="iPhone 14">
+                <h3>iPhone 14</h3>
+                <p data-price="7999.00">R$ 7.999,00</p>
+                <button class="view-product" data-product="iPhone 14" data-price="7999.00" data-details="Cor: Roxo, Memória: 128GB" onclick="location.href='product.html?product=iPhone+14'">Ver Produto</button>
+            </div>
+            <div class="product-card">
+                <img src="img/iphone15.png" alt="iPhone 15">
+                <h3>iPhone 15</h3>
+                <p data-price="8999.00">R$ 8.999,00</p>
+                <button class="view-product" data-product="iPhone 15" data-price="8999.00" data-details="Cor: Rosa, Memória: 256GB" onclick="location.href='product.html?product=iPhone+15'">Ver Produto</button>
+            </div>
+            <div class="product-card">
+                <img src="img/iphone16.png" alt="iPhone 16">
+                <h3>iPhone 16</h3>
+                <p data-price="9999.00">R$ 9.999,00</p>
+                <button class="view-product" data-product="iPhone 16" data-price="9999.00" data-details="Cor: Prata, Memória: 512GB" onclick="location.href='product.html?product=iPhone+16'">Ver Produto</button>
+            </div>
+            <div class="product-card">
+                <img src="img/airpods.png" alt="AirPods">
+                <h3>AirPods</h3>
+                <p data-price="1999.00">R$ 1.999,00</p>
+                <button class="view-product" data-product="AirPods" data-price="1999.00" data-details="Cor: Branco, Memória: N/A" onclick="location.href='product.html?product=AirPods'">Ver Produto</button>
+            </div>
+            <div class="product-card">
+                <img src="img/iphone13pro.png" alt="iPhone 13 Pro">
+                <h3>iPhone 13 Pro</h3>
+                <p data-price="9999.00">R$ 9.999,00</p>
+                <button class="view-product" data-product="iPhone 13 Pro" data-price="9999.00" data-details="Cor: Dourado, Memória: 256GB" onclick="location.href='product.html?product=iPhone+13+Pro'">Ver Produto</button>
+            </div>
+            <div class="product-card">
+                <img src="img/iphone14pro.png" alt="iPhone 14 Pro">
+                <h3>iPhone 14 Pro</h3>
+                <p data-price="10999.00">R$ 10.999,00</p>
+                <button class="view-product" data-product="iPhone 14 Pro" data-price="10999.00" data-details="Cor: Preto, Memória: 256GB" onclick="location.href='product.html?product=iPhone+14+Pro'">Ver Produto</button>
+            </div>
+            <div class="product-card">
+                <img src="img/iphone15pro.png" alt="iPhone 15 Pro">
+                <h3>iPhone 15 Pro</h3>
+                <p data-price="11999.00">R$ 11.999,00</p>
+                <button class="view-product" data-product="iPhone 15 Pro" data-price="11999.00" data-details="Cor: Azul, Memória: 512GB" onclick="location.href='product.html?product=iPhone+15+Pro'">Ver Produto</button>
+            </div>
+            <div class="product-card">
+                <img src="img/iphone13promax.png" alt="iPhone 13 Pro Max">
+                <h3>iPhone 13 Pro Max</h3>
+                <p data-price="10999.00">R$ 10.999,00</p>
+                <button class="view-product" data-product="iPhone 13 Pro Max" data-price="10999.00" data-details="Cor: Prata, Memória: 512GB" onclick="location.href='product.html?product=iPhone+13+Pro+Max'">Ver Produto</button>
+            </div>
+            <div class="product-card">
+                <img src="img/iphone14promax.png" alt="iPhone 14 Pro Max">
+                <h3>iPhone 14 Pro Max</h3>
+                <p data-price="11999.00">R$ 11.999,00</p>
+                <button class="view-product" data-product="iPhone 14 Pro Max" data-price="11999.00" data-details="Cor: Roxo, Memória: 512GB" onclick="location.href='product.html?product=iPhone+14+Pro+Max'">Ver Produto</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 iGenius Store. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
