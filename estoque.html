@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="estoque.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Controle de Estoque de Telefones</h1>
+        <form id="product-form">
+            <input type="text" id="product-name" placeholder="Nome do Produto" required>
+            <input type="number" id="product-quantity" placeholder="Quantidade" required min="1">
+            <button type="submit">Adicionar Produto</button>
+        </form>
+        <h2>Estoque</h2>
+        <ul id="product-list"></ul>
+    </div>
+    <script src="eoqu.js"></script>
+</body>
+</html>
