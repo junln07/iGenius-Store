@@ -1,29 +1,36 @@
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
+// Script for calculating the total price in the cart and removing items
+const quantities = document.querySelectorAll('.quantity');
+const totalPriceElement = document.getElementById('total-price');
+const removeButtons = document.querySelectorAll('.remove-item');
 
-// Função para atualizar a exibição dos itens no carrinho
-function updateCartDisplay() {
-    const cartItemsContainer = document.getElementById('cart-items');
-    const totalPriceContainer = document.getElementById('total-price');
+// Function to update the total price
+function updateTotal() {
+    let total = 0;
+    quantities.forEach(quantity => {
+        const price = parseFloat(quantity.closest('.item-details').querySelector('.price').innerText.replace('R$ ', '').replace('.', '').replace(',', '.'));
+        total += price * quantity.value;
+    });
+    totalPriceElement.innerText = `R$ ${total.toFixed(2).replace('.', ',')}`;
+}
 
-    // Limpa o conteúdo anterior
-    cartItemsContainer.innerHTML = '';
-    totalPriceContainer.innerHTML = '';
+// Event listeners for quantity changes
+quantities.forEach(quantity => {
+    quantity.addEventListener('change', updateTotal);
+});
 
-    // Adiciona itens do carrinho ao DOM
-    if (cart.length > 0) {
-        cart.forEach(item => {
-            const itemElement = document.createElement('div');
-            itemElement.textContent = `${item.product} - R$ ${item.price.toFixed(2)}`;
-            cartItemsContainer.appendChild(itemElement);
-        });
-
-        // Calcula o preço total
-        const totalPrice = cart.reduce((total, item) => total + item.price, 0);
-        totalPriceContainer.textContent = `Total: R$ ${totalPrice.toFixed(2)}`;
-    } else {
-        cartItemsContainer.textContent = 'Seu carrinho está vazio.';
+// Function to remove an item from the cart
+function removeItem(event) {
+    const cartItem = event.target.closest('.cart-item');
+    if (cartItem) {
+        cartItem.remove();
+        updateTotal(); // Update total after removing item
     }
 }
 
-// Atualiza a exibição do carrinho ao carregar a página
-updateCartDisplay();
+// Event listeners for remove buttons
+removeButtons.forEach(button => {
+    button.addEventListener('click', removeItem);
+});
+
+// Initialize the total when the page loads
+updateTotal();

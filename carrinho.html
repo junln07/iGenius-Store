@@ -4,28 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Carrinho</title>
+    <title>Carrinho de Compras</title>
     <link rel="stylesheet" href="carrinho.css">
 </head>
 <body>
+
+    <!-- Cabeçalho -->
     <header>
         <div class="container">
-            <h1>Carrinho de Compras</h1>
-            <a href="index.html" class="btn">Voltar à Loja</a>
-            <a href="checkout.html" class="btn">Finalizar Compra</a>
+            <div class="logo">
+                <a href="#">iGenius Store</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="carrinho.html" class="cart-button">Cart</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section id="cart" class="container">
-        <h2>Itens no Carrinho</h2>
-        <div id="cart-items"></div>
-        <div id="total-price"></div>
+    <!-- Carrinho de Compras -->
+    <section class="cart-container">
+        <h2>Carrinho de Compras</h2>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="img/iphone13.png" alt="iPhone 13">
+                <div class="item-details">
+                    <h3>iPhone 13</h3>
+                    <p class="price">R$ 6.999,00</p>
+                    <input type="number" value="1" min="1" class="quantity">
+                    <button class="remove-item">Remover</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="img/iphone14.png" alt="iPhone 14">
+                <div class="item-details">
+                    <h3>iPhone 14</h3>
+                    <p class="price">R$ 7.999,00</p>
+                    <input type="number" value="1" min="1" class="quantity">
+                    <button class="remove-item">Remover</button>
+                </div>
+            </div>
+            <!-- Adicione mais itens conforme necessário -->
+        </div>
+        <div class="cart-summary">
+            <h3>Resumo do Carrinho</h3>
+            <p>Total: <span id="total-price">R$ 14.998,00</span></p>
+            <button class="checkout-button">Finalizar Compra</button>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Loja iPhone. Todos os direitos reservados.</p>
-    </footer>
-
     <script src="carrinho.js"></script>
+
 </body>
 </html>

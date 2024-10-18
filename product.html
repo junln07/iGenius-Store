@@ -13,7 +13,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                iGenius Store
+                <a href="index.html">iGenius Store</a>
             </div>
             <nav>
                 <ul>
@@ -28,15 +28,39 @@
 
     <!-- Detalhes do Produto -->
     <section class="product-details container">
-        <h2>Detalhes do Produto</h2>
-        <div class="product-info">
-            <img id="product-image" src="" alt="Produto">
-            <div class="product-description">
-                <h3 id="product-name"></h3>
-                <p id="product-price"></p>
-                <p id="product-details"></p>
-                <button id="add-to-cart">Adicionar ao Carrinho</button>
+        <div class="product-gallery">
+            <div class="product-image-container">
+                <img id="product-image" src="" alt="Produto" class="main-image">
+                <div class="thumbnail-images">
+                    <img src="img/iphone13.png" alt="Thumbnail 1" class="thumbnail" onclick="changeImage('img/iphone13.png')">
+                    <img src="img/iphone12.png" alt="Thumbnail 2" class="thumbnail" onclick="changeImage('img/iphone12.png')">
+                    <img src="img/iphone11.png" alt="Thumbnail 3" class="thumbnail" onclick="changeImage('img/iphone11.png')">
+                    <img src="img/iphonese.png" alt="Thumbnail 4" class="thumbnail" onclick="changeImage('img/iphonese.png')">
+                    <img src="img/iphone14.png" alt="Thumbnail 5" class="thumbnail" onclick="changeImage('img/iphone14.png')">
+                </div>
             </div>
+            <div class="product-info">
+                <h1 id="product-name" class="product-title"></h1>
+                <p id="product-price" class="price"></p>
+                <p id="product-details" class="details"></p>
+                <button id="add-to-cart" class="btn">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Especificações do Produto -->
+    <section class="specifications container">
+        <h3>Especificações</h3>
+        <ul id="product-specifications">
+            <!-- Specifications will be populated here -->
+        </ul>
+    </section>
+
+    <!-- Avaliações dos Clientes -->
+    <section class="reviews container">
+        <h3>Avaliações dos Clientes</h3>
+        <div id="customer-reviews">
+            <!-- Customer reviews will be populated here -->
         </div>
     </section>
 
@@ -47,66 +71,11 @@
         </div>
     </footer>
 
+    <script src="product.js"></script>
     <script>
-        // Função para obter os parâmetros da URL
-        function getQueryParameter(name) {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(name);
+        function changeImage(imageSrc) {
+            document.getElementById("product-image").src = imageSrc;
         }
-
-        // Atualiza as informações do produto
-        function updateProductDetails(product) {
-            const productData = {
-                iphone13: {
-                    name: "iPhone 13",
-                    price: "R$ 6.999,00",
-                    details: "iPhone 13 com tela Super Retina XDR de 6,1 polegadas e A15 Bionic.",
-                    image: "img/iphone13.png"
-                },
-                iphone12: {
-                    name: "iPhone 12",
-                    price: "R$ 5.499,00",
-                    details: "iPhone 12 com 5G e tela Super Retina XDR de 6,1 polegadas.",
-                    image: "img/iphone12.png"
-                },
-                iphone11: {
-                    name: "iPhone 11",
-                    price: "R$ 4.299,00",
-                    details: "iPhone 11 com câmera dupla e A13 Bionic.",
-                    image: "img/iphone11.png"
-                },
-                iphonese: {
-                    name: "iPhone SE",
-                    price: "R$ 3.799,00",
-                    details: "iPhone SE com a performance do A13 Bionic.",
-                    image: "img/iphonese.png"
-                },
-                iphone14: {
-                    name: "iPhone 14",
-                    price: "R$ 7.999,00",
-                    details: "iPhone 14 com melhorias na câmera e duração da bateria.",
-                    image: "img/iphone14.png"
-                },
-                // Adicione mais produtos aqui...
-            };
-
-            const productInfo = productData[product];
-            if (productInfo) {
-                document.getElementById("product-name").textContent = productInfo.name;
-                document.getElementById("product-price").textContent = productInfo.price;
-                document.getElementById("product-details").textContent = productInfo.details;
-                document.getElementById("product-image").src = productInfo.image;
-            } else {
-                document.querySelector(".product-details").innerHTML = "<p>Produto não encontrado.</p>";
-            }
-        }
-
-        // Executa ao carregar a página
-        window.onload = function() {
-            const product = getQueryParameter('product');
-            updateProductDetails(product);
-        };
     </script>
-
 </body>
 </html>
