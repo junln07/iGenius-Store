@@ -42,6 +42,7 @@ nav ul li a:hover {
 }
 .product-details {
     display: flex;
+    flex-direction: column; /* Stack on smaller screens */
     margin-top: 30px;
     background: #ffffff;
     padding: 30px;
@@ -50,11 +51,11 @@ nav ul li a:hover {
 }
 .product-gallery {
     flex: 1;
-    margin-right: 30px;
+    margin-right: 0; /* Remove margin for smaller screens */
 }
 .main-image {
     width: 100%; /* Full width */
-    max-width: 600px; /* Max width */
+    max-width: 100%; /* Max width for responsiveness */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -62,6 +63,7 @@ nav ul li a:hover {
 .thumbnail-images {
     display: flex;
     margin-top: 15px;
+    overflow-x: auto; /* Allow horizontal scrolling for thumbnails */
 }
 .thumbnail {
     width: 80px; /* Thumbnail width */

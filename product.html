@@ -1,3 +1,4 @@
+<!-- Start of Selection -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,6 +7,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Detalhes do Produto - iGenius Store</title>
     <link rel="stylesheet" href="product.css">
+    <style>
+        /* Responsive styles */
+        .product-details {
+            display: flex;
+            flex-direction: column; /* Stack on smaller screens */
+        }
+        .product-gallery {
+            display: flex;
+            flex-direction: column; /* Stack images vertically on smaller screens */
+        }
+        .product-image-container {
+            display: flex;
+            flex-direction: column; /* Stack main image and thumbnails */
+            align-items: center; /* Center align images */
+        }
+        .thumbnail-images {
+            display: flex;
+            justify-content: center; /* Center thumbnails */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+        .thumbnail {
+            width: 60px; /* Set a fixed width for thumbnails */
+            margin: 5px; /* Add margin for spacing */
+            cursor: pointer; /* Change cursor to pointer */
+        }
+        .product-info {
+            text-align: center; /* Center align product info */
+        }
+        @media (min-width: 768px) {
+            .product-details {
+                flex-direction: row; /* Side by side on larger screens */
+            }
+            .product-gallery {
+                flex-direction: row; /* Side by side on larger screens */
+            }
+            .product-image-container {
+                flex: 1; /* Allow main image to take more space */
+            }
+            .product-info {
+                flex: 1; /* Allow product info to take more space */
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -79,3 +123,4 @@
     </script>
 </body>
 </html>
+<!-- End of Selection -->

@@ -34,3 +34,14 @@ removeButtons.forEach(button => {
 
 // Initialize the total when the page loads
 updateTotal();
+
+// Responsive adjustments for mobile and desktop
+window.addEventListener('resize', () => {
+    if (window.innerWidth < 768) {
+        // Adjust styles or functionality for mobile view
+        totalPriceElement.style.fontSize = '1.5em'; // Example adjustment
+    } else {
+        // Adjust styles or functionality for desktop view
+        totalPriceElement.style.fontSize = '2em'; // Example adjustment
+    }
+});

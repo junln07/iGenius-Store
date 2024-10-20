@@ -82,18 +82,6 @@ function updateProductDetails(product) {
                 { user: "Ana", comment: "A bateria dura muito!" }
             ]
         },
-            specifications: [
-                "Armazenamento: 64GB",
-                "Cor: Preto",
-                "Tela: 6,1\" Liquid Retina",
-                "Câmera: 12MP",
-                "Processador: A13 Bionic"
-            ],
-            reviews: [
-                { user: "Carlos", comment: "Ótimo custo-benefício." },
-                { user: "Ana", comment: "A bateria dura muito!" }
-            ]
-        },
         iphonese: {
             name: "iPhone SE",
             price: "R$ 3.799,00",
@@ -128,9 +116,9 @@ function updateProductDetails(product) {
                 "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
                 "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
                 "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
+                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
                 "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53.jpg",
-                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53.jpg",
-                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53.jpg"
+                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg"
             ],
             specifications: [
                 "Armazenamento: 128GB",
@@ -153,9 +141,9 @@ function updateProductDetails(product) {
                 "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
                 "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
                 "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
-                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53.jpg",
-                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53.jpg",
-                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53.jpg"
+                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
+                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
+                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg"
             ],
             specifications: [
                 "Armazenamento: 256GB",
@@ -178,9 +166,9 @@ function updateProductDetails(product) {
                 "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
                 "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
                 "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
-                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53.jpg",
-                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53.jpg",
-                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53.jpg"
+                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
+                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
+                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg"
             ],
             specifications: [
                 "Armazenamento: 512GB",
@@ -203,8 +191,8 @@ function updateProductDetails(product) {
                 "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
                 "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
                 "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
-                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53.jpg",
-                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53.jpg",
+                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
+                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
                 "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53.jpg"
             ],
             specifications: [
@@ -227,8 +215,8 @@ function updateProductDetails(product) {
                 "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
                 "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
                 "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
-                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53.jpg",
-                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53.jpg"
+                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg",
+                "https://a-static.mlcdn.com.br/800x560/iphone-11-apple-256gb-product-red-61-12mp-ios/magazineluiza/155611900/ed8b0056044a989d7653d54120d53b23.jpg"
             ],
             specifications: [
                 "Armazenamento: 256GB",
@@ -378,6 +366,7 @@ function updateProductDetails(product) {
 
         // Populate specifications
         const specificationsList = document.getElementById("product-specifications");
+        specificationsList.innerHTML = ''; // Clear previous specifications
         productInfo.specifications.forEach(spec => {
             const li = document.createElement("li");
             li.textContent = spec;
@@ -386,6 +375,7 @@ function updateProductDetails(product) {
 
         // Populate reviews
         const reviewsContainer = document.getElementById("customer-reviews");
+        reviewsContainer.innerHTML = ''; // Clear previous reviews
         productInfo.reviews.forEach(review => {
             const div = document.createElement("div");
             div.innerHTML = `<strong>${review.user}:</strong> ${review.comment}`;

@@ -13,10 +13,16 @@ function addProduct(name, quantity) {
     
     const li = document.createElement('li');
     li.textContent = `${name} - ${quantity}`;
+    li.style.display = 'flex'; // Flexbox for better layout
+    li.style.justifyContent = 'space-between'; // Space between product and quantity
+    li.style.alignItems = 'center'; // Center items vertically
+    li.style.padding = '10px'; // Padding for touch targets
+    li.style.borderBottom = '1px solid #ddd'; // Separator for items
 
     const removeButton = document.createElement('button');
     removeButton.textContent = 'Remover';
     removeButton.classList.add('remove-btn');
+    removeButton.style.marginLeft = '10px'; // Space between text and button
     removeButton.onclick = function() {
         productList.removeChild(li);
     };

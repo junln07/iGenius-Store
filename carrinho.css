@@ -16,12 +16,12 @@ header {
     background: #333;
     color: #fff;
     padding: 15px 0;
+    text-align: center; /* Center header content for better mobile view */
 }
 
 header .logo {
     font-size: 24px;
     font-weight: bold;
-    text-align: left;
 }
 
 header .logo a {
@@ -80,6 +80,7 @@ nav ul li a:hover {
 .cart-container h2 {
     margin-bottom: 20px;
     color: #333;
+    text-align: center; /* Center title for better mobile view */
 }
 
 .cart-items {
@@ -142,6 +143,7 @@ nav ul li a:hover {
 
 .cart-summary h3 {
     margin: 0;
+    text-align: center; /* Center summary title for better mobile view */
 }
 
 .checkout-button {
@@ -157,4 +159,34 @@ nav ul li a:hover {
 
 .checkout-button:hover {
     background: #218838;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Adjust container width for smaller screens */
+    }
+
+    nav {
+        float: none; /* Stack navigation items vertically */
+        text-align: center; /* Center navigation for mobile */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Stack navigation items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add margin for spacing */
+    }
+
+    .cart-item {
+        flex-direction: column; /* Stack item details vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .cart-item img {
+        margin-bottom: 10px; /* Add margin below image */
+    }
 }
