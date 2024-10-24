@@ -32,6 +32,26 @@ removeButtons.forEach(button => {
     button.addEventListener('click', removeItem);
 });
 
+// Function to add an item to the cart
+function addItemToCart(event) {
+    const itemDetails = event.target.closest('.item-details');
+    const cartItem = document.createElement('div');
+    cartItem.classList.add('cart-item');
+    cartItem.innerHTML = `
+        <div class="item-details">${itemDetails.innerHTML}</div>
+        <input type="number" class="quantity" value="1" min="1">
+        <button class="remove-item">Remove</button>
+    `;
+    document.getElementById('cart').appendChild(cartItem); // Assuming there's a cart element
+    updateTotal(); // Update total after adding item
+}
+
+// Event listeners for add buttons (assuming they have a class 'add-to-cart')
+const addButtons = document.querySelectorAll('.add-to-cart');
+addButtons.forEach(button => {
+    button.addEventListener('click', addItemToCart);
+});
+
 // Initialize the total when the page loads
 updateTotal();
 
