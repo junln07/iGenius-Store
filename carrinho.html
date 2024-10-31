@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="carrinho.css">
+    <style>
+        /* Additional styles for responsiveness */
+        .cart-container {
+            padding: 20px;
+        }
+
+        .cart-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .item-details {
+            text-align: center;
+        }
+
+        .cart-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .cart-summary {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .cart-item {
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .item-details {
+                margin-left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">iGenius Store</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="carrinho.html" class="cart-button">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Carrinho de Compras -->
+    <section class="cart-container">
+        <h2>Carrinho de Compras</h2>
+        <div id="cart" class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-summary">
+            <h3>Resumo do Carrinho</h3>
+            <p>Total: <span id="total-price">R$ 0,00</span></p>
+            <button class="checkout-button">Finalizar Compra</button>
+        </div>
+    </section>
+
+    <!-- Product List -->
+    <section class="product-list">
+        <h2>Produtos</h2>
+        <div class="product">
+            <div class="item-details">
+                <h3>iPhone 13</h3>
+                <p class="price">R$ 6.999,00</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="item-details">
+                <h3>iPhone 14</h3>
+                <p class="price">R$ 7.999,00</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <!-- Add more products as needed -->
+    </section>
+
+    <script src="carrinho.js"></script>
+
+</body>
+</html>

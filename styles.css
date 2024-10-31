@@ -1,0 +1,95 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #007bff; /* Changed to blue */
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white; /* Changed text color to white for better contrast */
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Changed text color to white for better contrast */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: #0056b3; /* Darker blue for button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #004494; /* Darker blue on hover */
+}
+
+.hero {
+    text-align: center; /* Center the banner */
+}
+
+.banner-image {
+    width: 100%; /* Ensure the banner takes full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e63946;
+}
