@@ -9,9 +9,25 @@ function searchProducts() {
         alert('Por favor, insira um termo de pesquisa.');
     }
 }
-// Selecionar todos os botões "Ver Produto"
-document.querySelectorAll('.view-product-button').forEach(button => {
-    button.addEventListener('click', () => {
-        window.open('https://wa.me/message/Q5IDCLX3TDGLI1', '_blank');
+
+// Função para adicionar produtos ao carrinho
+function addToCart(productName, productPrice) {
+    const cartItems = document.getElementById('cart-items');
+    const cartItem = document.createElement('div');
+    cartItem.className = 'cart-item';
+    cartItem.innerHTML = `
+        <p>${productName}</p>
+        <p>${productPrice}</p>
+    `;
+    cartItems.appendChild(cartItem);
+}
+
+// Selecionar todos os botões "Adicionar ao Carrinho"
+document.querySelectorAll('.add-to-cart-button').forEach(button => {
+    button.addEventListener('click', (event) => {
+        const productCard = event.target.closest('.product-card');
+        const productName = productCard.querySelector('h3').innerText;
+        const productPrice = productCard.querySelector('.price').innerText;
+        addToCart(productName, productPrice);
     });
 });

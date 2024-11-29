@@ -6,6 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Loja de iPhones</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product-card {
+            flex: 1 1 calc(33.333% - 30px);
+            box-sizing: border-box;
+            margin: 15px;
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .product-card {
+                flex: 1 1 calc(50% - 30px);
+            }
+        }
+        @media (max-width: 480px) {
+            .product-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -42,81 +78,76 @@
         <div class="product-card">
             <img src="https://a-static.mlcdn.com.br/280x210/apple-iphone-13-128gb-estelar-tela-61-12mp/magazineluiza/234661900/d9bb81423a4ca9e0208bb75ee64fdf29.jpg" alt="iPhone 13">
             <h3>iPhone 13</h3>
-            
-            <p class="price">R$ 6.999,00</p>
-            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">mais informações</a>
+            <p class="price">R$ 3.348,00</p>
+            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">Mais Informações</a>
         </div>
         <div class="product-card">
             <img src="https://a-static.mlcdn.com.br/280x210/iphone-12-apple-64gb-preto-tela-61-12mp-ios/magazineluiza/231147300/de49308207e6e71bf284ae465791ec93.jpg" alt="iPhone 12">
             <h3>iPhone 12</h3>
-            <p class="price">R$ 5.499,00</p>
-            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">mais informações</a>
+            <p class="price">R$ 3.074,00</p>
+            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">Mais Informações</a>
         </div>
-        <div class="product-card">
-            <img src="https://a-static.mlcdn.com.br/800x560/iphone-11-apple-64gb-preto-61-12mp-ios/magazineluiza/155610500/2815c001fcdff11766fcb266dca62daf.jpg" alt="iPhone 11">
-            <h3>iPhone 11</h3>
-            <p class="price">R$ 4.299,00</p>
-            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">mais informações</a>
-        </div>
+        
         <div class="product-card">
             <img src="https://a-static.mlcdn.com.br/280x210/apple-iphone-14-128gb-estelar-61-12mp-ios-5g/magazineluiza/237184100/b208242666e673bb1cfff75f61667947.jpg" alt="iPhone 14">
-            <h3>iPhone 14</h3>
-            <p class="price">R$ 7.999,00</p>
-            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">mais informações</a>
+            <h3>iPhone 14 Plus</h3>
+            <p class="price">R$ 4.557,50</p>
+            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">Mais Informações</a>
         </div>
         <div class="product-card">
             <img src="https://a-static.mlcdn.com.br/280x210/apple-iphone-15-128gb-azul-61-48mp-ios-5g/magazineluiza/238034800/7121a51025900cde71e9fde55c0c63d0.jpg" alt="iPhone 15">
             <h3>iPhone 15</h3>
-            <p class="price">R$ 8.999,00</p>
-            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">mais informações</a>
+            <p class="price">R$ 4.357,50</p>
+            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">Mais Informações</a>
         </div>
         <div class="product-card">
             <img src="https://a-static.mlcdn.com.br/280x210/apple-iphone-16-128gb-preto-61-48mp-ios-5g/magazineluiza/238720700/440df904b6fbc142c001be265bc859d6.jpg" alt="iPhone 16">
             <h3>iPhone 16</h3>
+        
             <p class="price">R$ 9.999,00</p>
-            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">mais informações</a>
+            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">Mais Informações</a>
         </div>
         <div class="product-card">
             <img src="https://a-static.mlcdn.com.br/280x210/fone-compativel-iphone-airpods-pro-3a-geracao-linha-premium-agold/mimportados/09d81db4662c11ef87a24201ac18501b/bcae878747920a016d6d50fcf17aa543.jpeg" alt="AirPods">
             <h3>AirPods</h3>
             <p class="price">R$ 1.999,00</p>
-            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">mais informações</a>
+            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">Mais Informações</a>
             </div>
         <div class="product-card">
             <img src="https://a-static.mlcdn.com.br/280x210/usado-iphone-13-pro-azul-128gb-excelente-trocafy-apple/trocafy/1414/1a028bd9de2ad90df44447508c25c2e1.jpeg" alt="iPhone 13 Pro">
             <h3>iPhone 13 Pro</h3>
             <p class="price">R$ 9.999,00</p>
-            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">mais informações</a>
+            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">Mais Informações</a>
         </div>
         <div class="product-card">
             <img src="https://a-static.mlcdn.com.br/280x210/usado-iphone-14-pro-roxo-256gb-excelente-trocafy-apple/trocafy/2616/538662b0959c381e94154081dd3f94db.jpeg" alt="iPhone 14 Pro">
             <h3>iPhone 14 Pro</h3>
             <p class="price">R$ 10.999,00</p>
-            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">mais informações</a>
+            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">Mais Informações</a>
         </div>
         <div class="product-card">
             <img src="https://a-static.mlcdn.com.br/280x210/apple-iphone-15-pro-128gb-titanio-azul-61-48mp-ios-5g/magazineluiza/237919500/4b5ba40d2fd65f25babc01e98c7dd687.jpg" alt="iPhone 15 Pro">
             <h3>iPhone 15 Pro</h3>
             <p class="price">R$ 11.999,00</p>
-            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">mais informações</a>
+            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">Mais Informações</a>
         </div>
         <div class="product-card">
             <img src="https://a-static.mlcdn.com.br/280x210/usado-iphone-13-pro-max-grafite-128gb-excelente-trocafy-apple/trocafy/1347/34e0cc7c9ad84cd8ec814fd6815f9f73.jpeg" alt="iPhone 13 Pro Max">
             <h3>iPhone 13 Pro Max</h3>
             <p class="price">R$ 10.999,00</p>
-            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">mais informações</a>
+            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">Mais Informações</a>
         </div>
         <div class="product-card">
             <img src="https://a-static.mlcdn.com.br/280x210/usado-iphone-14-pro-max-roxo-128gb-excelente-trocafy-apple/trocafy/2771/062053432e58adb384fc164a5f49a7cc.jpeg" alt="iPhone 14 Pro Max">
             <h3>iPhone 14 Pro Max</h3>
             <p class="price">R$ 11.999,00</p>
-            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">mais informações</a>
+            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">Mais Informações</a>
         </div>
         <div class="product-card">
             <img src="https://a-static.mlcdn.com.br/280x210/apple-iphone-15-pro-max-512gb-titanio-branco-67-48mp-ios-5g/magazineluiza/237926200/f7b66a8e467890d50ba22091b225c73a.jpg" alt="iPhone 15 Pro Max">
             <h3>iPhone 15 Pro Max</h3>
             <p class="price">R$ 12.999,00</p>
-            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">mais informações</a>
+            <a href="https://wa.me/message/Q5IDCLX3TDGLI1" class="view-product-button" target="_blank">Mais Informações</a>
         </div>
     </div>
 
