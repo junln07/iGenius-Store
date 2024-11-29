@@ -1,16 +1,16 @@
-// Função para buscar produtos
+// Function to search products
 function searchProducts() {
-    const query = document.getElementById('search-input').value.trim(); // Remove espaços em branco
-    // Verifica se a consulta não está vazia
+    const query = document.getElementById('search-input').value.trim(); // Remove whitespace
+    // Check if the query is not empty
     if (query) {
-        // Redireciona para a página de resultados de pesquisa
+        // Redirect to the search results page
         window.location.href = `search.html?query=${encodeURIComponent(query)}`;
     } else {
-        alert('Por favor, insira um termo de pesquisa.');
+        alert('Please enter a search term.');
     }
 }
 
-// Função para adicionar produtos ao carrinho
+// Function to add products to the cart
 function addToCart(productName, productPrice) {
     const cartItems = document.getElementById('cart-items');
     const cartItem = document.createElement('div');
@@ -22,7 +22,7 @@ function addToCart(productName, productPrice) {
     cartItems.appendChild(cartItem);
 }
 
-// Selecionar todos os botões "Adicionar ao Carrinho"
+// Select all "Add to Cart" buttons
 document.querySelectorAll('.add-to-cart-button').forEach(button => {
     button.addEventListener('click', (event) => {
         const productCard = event.target.closest('.product-card');
