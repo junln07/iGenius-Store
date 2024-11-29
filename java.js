@@ -9,3 +9,9 @@ function searchProducts() {
         alert('Por favor, insira um termo de pesquisa.');
     }
 }
+// Selecionar todos os botões "Ver Produto"
+document.querySelectorAll('.view-product-button').forEach(button => {
+    button.addEventListener('click', () => {
+        window.open('https://wa.me/message/Q5IDCLX3TDGLI1', '_blank');
+    });
+});
